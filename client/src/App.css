@@ -16,6 +16,10 @@ html {
   text-shadow: 2px 2px gainsboro;
 }
 
+.dark-mode .title {
+  text-shadow: 2px 2px slategray;
+}
+
 .dateRange {
   font-size: 32px;
   text-shadow: 2px 2px slategray;
@@ -54,5 +58,4 @@ nav {
 
 nav button {
   border-radius: 5px;
-
 }
