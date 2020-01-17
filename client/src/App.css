@@ -1,33 +1,61 @@
+html, body {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('./soccerball.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  text-shadow: 2px 2px gainsboro;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dark-mode .title {
+  text-shadow: 2px 2px slategray;
+}
+
+.dateRange {
+  font-size: 32px;
+  text-shadow: 2px 2px slategray;
+}
+
+.playerCards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.playerCard {
+  background-color: ivory;
+  width: 300px;
+  border: 1px solid mediumturquoise;
+  border-radius: 5px;
+  margin: 1% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode .playerCard {
+  background-color: black;
+  color: whitesmoke;
+  border-color: tomato;
+}
+
+html .dark-mode {
+  background-image: url('./darkmode-bg.jpg');
+  color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+nav button {
+  border-radius: 5px;
 }
