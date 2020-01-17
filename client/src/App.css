@@ -10,12 +10,15 @@ html {
 
 .App {
   text-align: center;
-  margin-top: 3%;
 }
 
+.title {
+  text-shadow: 2px 2px gainsboro;
+}
 
 .dateRange {
   font-size: 32px;
+  text-shadow: 2px 2px slategray;
 }
 
 .playerCards {
@@ -29,5 +32,27 @@ html {
   width: 300px;
   border: 1px solid mediumturquoise;
   border-radius: 5px;
-  margin: 2% 0;
+  margin: 1% 0;
+}
+
+.dark-mode .playerCard {
+  background-color: black;
+  color: whitesmoke;
+  border-color: tomato;
+}
+
+html .dark-mode {
+  background-image: url('./darkmode-bg.jpg');
+  color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+nav button {
+  border-radius: 5px;
+
 }

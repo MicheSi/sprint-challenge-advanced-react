@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Axios from 'axios';
 import PlayerCard from './components/PlayerCard';
-
+import Navbar from './components/Navbar';
 import './App.css';
+
 
 class App extends Component {
   state = {
@@ -26,6 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
         <h1 data-testid='appTitle' className='title'>Women's World Cup Google Trends</h1>
         <p data-testid='searchDates' className='dateRange'>June - July 2019</p>
         <div className='playerCards'>
