@@ -10,5 +10,24 @@ html {
 
 .App {
   text-align: center;
+  margin-top: 3%;
 }
 
+
+.dateRange {
+  font-size: 32px;
+}
+
+.playerCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playerCard {
+  background-color: ivory;
+  width: 300px;
+  border: 1px solid mediumturquoise;
+  border-radius: 5px;
+  margin: 2% 0;
+}

@@ -1,17 +1,17 @@
 import {useState} from 'react';
 
-const useLocalStorage = (player, inititalValue) => {
+const useLocalStorage = (key, inititalValue) => {
     const [storedValue, setStoredValue] = useState(() => {
-        if (localStorage.getItem(player)) {
-            return JSON.parse(localStorage.getItem(player));
+        if (localStorage.getItem(key)) {
+            return JSON.parse(localStorage.getItem(key));
         } else {
-            localStorage.setItem(player, JSON.stringify(inititalValue));
+            localStorage.setItem(key, JSON.stringify(inititalValue));
             return inititalValue;
         }
     })
     const setValue = value => {
         setStoredValue(value);
-        localStorage.setItem(player, JSON.stringify(value));
+        localStorage.setItem(key, JSON.stringify(value));
     };
     return [storedValue, setValue];
 }
