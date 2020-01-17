@@ -26,8 +26,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Women's World Cup Google Trends</h1>
-        <p>June - July 2019</p>
+        <h1 data-testid='appTitle'>Women's World Cup Google Trends</h1>
+        <p data-testid='searchDates'>June - July 2019</p>
         {this.state.player.map(player => (
           <PlayerCard
           key={player.id}
